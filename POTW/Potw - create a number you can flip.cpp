@@ -44,9 +44,9 @@ int main() {
    
     cout << num4 / 9 * 9 << endl << "if you divide 36363 by nine, then mutiply, it is not the same, so that means it is not divisble by 9" << endl;
     
-    cout << num5 / 9 * 9 << endl << "if you divide 36636 by nine, then mutiply, it is not the same, so that means it is not divisble ny 9" << endl;
+    cout << num5 / 9 * 9 << endl << "if you divide 36636 by nine, then mutiply, it is not the same, so that means it is not divisble by 9" << endl;
     
-    cout << num6 / 9 * 9 << endl << "if you divide 36633 by nine, then mutiply, it is not the same so that means " << endl;
+    cout << num6 / 9 * 9 << endl << "if you divide 36633 by nine, then mutiply, it is not the same so that means it is not divisble by 9 " << endl;
     
     cout << num7 / 9 * 9 << endl << "if you divide 36663 by nine, then mutiply, it will not be the same, so that means it is not divisble by 9" << endl;
     
