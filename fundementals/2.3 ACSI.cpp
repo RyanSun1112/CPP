@@ -3,7 +3,8 @@
 using namespace std;
 
 int main() {
-    int num = 33333;
 
-    return 0;
+    string str = "你好";
+    cout << str << endl;
+
 }
