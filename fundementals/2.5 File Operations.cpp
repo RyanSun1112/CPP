@@ -15,11 +15,18 @@ int main() {
     cout << str;
 
 
-    // ifstream cin ("fundementals/file.in");
-    // int x , y , z;
-    // cin >> x;
-    // cin >> y;
-    // cin >> z;
+    ifstream cin ("fundementals/file.in");
+    int x , y , z;
+    cin >> x;
+    cin >> y;
+    cin >> z;
+
+    int hi = 0;
+    cout << ++hi << endl;
+    cout << "hi =" << hi << endl;
+
+    cout << hi++ << endl;
+    cout << "hi ="<< hi << endl;
  
     
     return 0;
