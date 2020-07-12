@@ -2,8 +2,7 @@
 
 using namespace std;
 
-int main() {
-    int num = 33333;
+int main(){         
 
     return 0;
 }
