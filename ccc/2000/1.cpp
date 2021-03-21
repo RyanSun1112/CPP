@@ -49,7 +49,10 @@ int formula1(int low, int& howmany1){
     return howmany1;
 }
 int formula2(int num2, int& howmany2){
-    if(num2 == 11 || num2 == 88 || num2 == 96 || num2 == 69){
+    if((num2 == 11) ||
+        (num2 == 88)||
+        (num2 == 96)||
+        ( num2 == 69)){
         howmany2++;
     }else{
         
@@ -63,7 +66,13 @@ int formula3(int num3, int& howmany3){
     digit_one = num3 % 10;
     digit_two = num3/10 % 10; 
     digit_three = num3/100 % 10;
-        if ((digit_one == 1 && digit_three == 1 || digit_one == 8 && digit_three == 8|| digit_one == 6 && digit_three == 9 || digit_one == 9 && digit_three == 6) && (digit_two == 1 || digit_two == 8 || digit_two == 0)){
+        if (((digit_one == 1 && digit_three == 1)|| 
+            (digit_one == 8 && digit_three == 8)|| 
+            (digit_one == 6 && digit_three == 9)|| 
+            (digit_one == 9 && digit_three == 6))&& 
+            ((digit_two == 1)||
+            (digit_two == 8)||
+            (digit_two == 0))){
             howmany3++;
         }else{
 
@@ -119,6 +128,7 @@ int main(){
         formula3(h,howmany);
         formula4(h,howmany);
         formula5(h,howmany);
+        cout << howmany << endl;
         return 0;
     }
     formula1(h,howmany);

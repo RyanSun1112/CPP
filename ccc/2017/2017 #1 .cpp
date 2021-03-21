@@ -3,10 +3,10 @@
 using namespace std;
 
 int main() {
-    int x = -1000 <= x <= 1000; x != 0;
-    int y = -1000 <= y <= 1000; y != 0;
+    int x;      //= -1000 <= x <= 1000; x != 0
+    int y;      // = -1000 <= y <= 1000; y != 0
 
-    cin >> x;
+    cin >> x;    // console input
     cin >> y;
 
 
