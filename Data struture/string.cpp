@@ -12,6 +12,13 @@ int main(){
     string str = "cool";
     size_t e = str.find("cool"); 
 
+    int x;
+    getline(cin, str);
+    cin >> x;
+    cout << x << endl;
+    cin >> ignore();
+    cout << str << endl;
+
     if(e == string::npos)
         cout <<"not found" << endl;
     else
