@@ -12,7 +12,7 @@ int main(){
     for(int i = 1; i < number;i++){
         people[i-1] = i;
     }
-    for
+    
 
     return 0;
 }

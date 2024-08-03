@@ -16,7 +16,6 @@ int main(){
     getline(cin, str);
     cin >> x;
     cout << x << endl;
-    cin >> ignore();
     cout << str << endl;
 
     if(e == string::npos)

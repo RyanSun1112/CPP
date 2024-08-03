@@ -2,22 +2,21 @@
 
 using namespace std;
 
-void brute_force(){
-    int sum = 0;
-
-    for(int i = 0; i <= 100; i++)
-        sum = sum + i;
-
-    cout << sum << endl;
+int sum = 0;
+void recursion(){
+    if(i == 100)
+        return sum;
+    recursion
 }
 
-void gauss(){
+void gauss(int n){
     int sum = 0;
-    sum = 50 * 101;
+    sum = (n*(n+1))/2;
     cout << sum << endl;
 }
-int main(){         
-    gauss();
+int main(){   
+    int n;      
+    gauss(n);
 
     return 0;
 }

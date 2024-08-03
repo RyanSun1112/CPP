@@ -1,63 +1,37 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-int formula(int Byron, int Nikki, int goal, int steps[4]){
-    int total_steps = 0;
-    int t = 0;
-    int h = 0;
-    while(total_steps != goal){
-        
-    }
-}
+
 int main(){         
-    int Byron = 0;
-    int Nikki = 0;
-    int total_steps = 0;
-    int steps[4];
-    int goal;
-    int h = 0;
-    int t = 0;
-
-    for(int i = 0; i < 4;i++)
-        cin >> steps[i];
-    cin >> goal;
-    while(total_steps != goal){
-        t = 0;
-        while(total_steps != goal && t < steps[0]){
-            t++;
-            total_steps++;
-            Nikki++;
-        }
-        h = 0;
-        while(total_steps != goal && h < steps[1]){
-            h++;
-            total_steps++;
-            Nikki--;
+    string input;
+    cin >> input;
+    bool endlt = false;
+    string number = {'1','2','3','4','5','6','7','8','9','0'};
+    for(int i = 0; i < input.size();i++){
+        
+        if(input[i] == '+'){
+            cout << " tighten ";
+            endlt = true;
+        } else if(input[i] == '-'){
+            cout << " loosen ";
+            endlt = true;
+        }else{
+            size_t found = number.find(input[i]);
+                while(i != input.size()){
+                    if(found!= std::string::npos)
+                        cout << input[i]; 
+                    else 
+                        break;
+                    i++;   
             }
+            cout << input[i];
+            if(endlt == true){
+                cout << endl;
+                endlt = false;
+            }
+            
+        }
         
     }
-    total_steps = 0;
-    while(total_steps != goal){
-        t = 0;
-        while(total_steps != goal && t < steps[2]){
-            t++;
-            total_steps++;
-            Byron++;
-        }
-        h = 0;
-        while(total_steps != goal && h < steps[3]){
-            h++;
-            total_steps++;
-            Byron--;
-
-        }
-    }
-    if(Byron > Nikki)
-        cout << "Byron"<< endl;
-    else if(Byron < Nikki)
-        cout << "Nikky"<< endl;
-    else
-        cout << "Tied" << endl;
-
     return 0;
 }
